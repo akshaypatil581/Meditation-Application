@@ -19,7 +19,7 @@ const app = () => {
   //play sound
   play.addEventListener("click", () => {
     checkPlaying(song);
-    song.play();
+    
   });
 
   // Create a function specific to stop and play the sound
@@ -30,7 +30,7 @@ const app = () => {
       play.src = './svg/pause.svg';
     } else {
       song.pause();
-      video.play();
+      video.pause();
       play.src = './svg/play.svg';
     }
   }
