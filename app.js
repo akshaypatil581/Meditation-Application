@@ -9,7 +9,6 @@ const app = () => {
   //time display
   const timeDisplay = document.querySelector(".time-display");
   const timeSelect = document.querySelectorAll(".time-select button");
-  console.log(timeSelect);
   //Get the length of the outline
   const outlineLength = outline.getTotalLength();
   //Duration
@@ -38,7 +37,6 @@ const app = () => {
   timeSelect.forEach(option => {
     option.addEventListener("click", function() {
       fakeDuration = this.getAttribute("data-time");
-      console.log(fakeDuration);
       timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(fakeDuration % 60)}`;
     });
   });
